@@ -171,9 +171,9 @@ cite{
     font-style: normal;
 }
 
-/* MEDIA QUERIE FOR PHONE */
-@media screen and (min-width: 414px) {
-
+/* MEDIA QUERIE FOR MOBILE */
+@media screen and (min-width: 390px) {
+    
     .nav__link {
         display: none;
         position: static;
@@ -188,18 +188,38 @@ cite{
     }
     
     .hamburger {
-        display: block;
-        margin: 0 90px;
+        display: block;  
+        margin-bottom: 10px;
+        
+    }
+
+    .hamburger .line{
+        width: 2rem;
+        height: 1.7px;
+    }
+
+    h1{
+        font-size: 20px;
+        margin-left: -130px;
     }
 
     .main-wrapper{
         display: flex;
         flex-direction: column;
-        margin: 20px -50px;
+        margin: 40px -80px;
+        font-size: 20px;
+        margin-right: 15px;
     }
 
     .main h2{
         width: 300px;
+        font-size: 35px;
+    }
+
+    .main-wrapper img{
+        width: 320px;
+        height: 260px;
+        margin-top: 40px;
     }
 
     .content-wrapper{
@@ -210,7 +230,8 @@ cite{
     .content h3{
         width: 350px;
         margin: 0 -90px;
-        padding-top: 40px;
+        padding-top: 80px;
+        font-size: 35px;
     }
 
     .contactme{
@@ -219,7 +240,9 @@ cite{
     }
 
     section img{
-        margin-left: -80px;
+        margin-left: -90px;
+        padding-top: 40px;
+        width: 400px;
     }
 
     .item-wrapper{
@@ -228,7 +251,7 @@ cite{
     }
 
     .image{
-        margin-left: 300px;
+        margin-left: 240px;
         margin-bottom: -50px;
     }
 
@@ -247,6 +270,14 @@ cite{
         margin: 0 -120px;
         width: 100%;
     }
+
+    footer p{
+        font-size: 25px;
+    }
+
+    footer .logo{
+        font-size: 20px;
+    }
 }
  /* MEDIA QUERY FOR IPAD */
 @media screen and (min-width: 768px) {
@@ -255,23 +286,35 @@ cite{
         display: block;
         position: static;
         width: auto;
-        margin-right: 20px;
+        margin-left: 60px;
         background: none;
+        margin-bottom: 10px;
     }
 
     .nav__link a {
         display: inline;
-        padding: 15px 20px;
+        padding: 8px;
     }
     
     .hamburger {
         display: none;
     }
 
+    h1{
+        font-size: 25px;
+        padding-left: 40px;
+    }
+
     .main-wrapper{
         display: flex;
         flex-direction: row;
-       margin: 90px -100px;
+        margin: 90px -50px;
+        font-size: 25px;
+    }
+
+    .main-wrapper img{
+        width: 500px;
+        height: 300px;
     }
 
     .main h2{
@@ -286,22 +329,24 @@ cite{
     .content h3{
         width: 350px;
         margin: 0 -90px;
-        padding-top: 40px;
+        padding-top: 60px;
     }
 
     .contactme{
         width: 120px;
-        margin: 2rem -70px;
+        margin: 4rem -60px;
     }
 
     section img{
-        margin-left: -90px;
-        margin-right: 25px;
+        margin-left: -50px;
+        margin-right: 60px;
+        width: 300px;
     }
 
     .item-wrapper{
         display: flex;
         flex-direction: column-reverse;
+        justify-content: space-between;
     }
 
     .image{
@@ -310,13 +355,13 @@ cite{
 
     .call{
         margin-left: 550px;
-        width: 20%;
+        width: 18%;
     }
 
     .contact{
-        width: 20%;
+        width: 16%;
         margin-top: -40px;
-        margin-left: 370px;
+        margin-left: 400px;
     }
 
     .item{
@@ -324,30 +369,39 @@ cite{
         width: 60%;
     }
 }
-/* MEDIA QUERY FOR LAPTOP */
+/* MEDIA QUERY FOR IPAD PRO */
 @media screen and (min-width: 1024px) {
    
     .nav__link {
         display: block;
         position: static;
         width: auto;
-        margin-right: 20px;
         background: none;
     }
 
     .nav__link a {
         display: inline;
-        padding: 15px 20px;
     }
     
     .hamburger {
         display: none;
     }
 
+    h1{
+        font-size: 25px;
+        padding-left: 90px;
+    }
+
     .main-wrapper{
         display: flex;
         flex-direction: row;
-        margin: 100px 18px;
+        margin: 100px -5px;
+    }
+
+    .main-wrapper img{
+        width: 400px;
+        height: 300px;
+        margin-right: 20px;
     }
 
     .main h2{
@@ -361,7 +415,7 @@ cite{
 
     .content h3{
         width: 400px;
-        margin: 40px 20px;
+        margin: 40px -40px;
     }
 
     .contactme{
@@ -370,7 +424,7 @@ cite{
     }
 
     section img{
-        margin: 2px;
+        width: 280px;
     }
 
     .item-wrapper{
@@ -384,7 +438,7 @@ cite{
 
     .call{
         margin-left: 842px;
-        width: 10%; 
+        width: 11%; 
     }
 
     .contact{
@@ -400,6 +454,21 @@ cite{
 }
 
 @media screen and (min-width: 1200px){
+
+    .nav__link{
+        margin-right: 80px;
+    }
+
+  
+    h1{
+        padding-left: 100px;
+    }
+
+    .main-wrapper img{
+        width: 600px;
+        height: 400px;
+        margin-left: 150px;
+    }
 
     .image{
         margin-left: 1100px;
@@ -417,8 +486,27 @@ cite{
     }
 
     .item{
-        margin: 0 5px;
         width: 50%;
+    }
+
+    .main-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 60px;
+        margin-left: 5px;
+    }
+
+    .content-wrapper{
+        display: flex;
+        flex-direction: row;
+        margin-left: 35px;
+    }
+
+    section img{   
+        width: 300px;
+        padding: 30px 3px;
+        margin-left: 30px;
     }
 }
 
